@@ -1,0 +1,26 @@
+```html
+<head>
+	...
+
+	<link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
+
+	...
+</head>
+```
+
+<head>
+	...
+
+	<link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
+
+	...
+</head>
+
+@font-face {
+    font-family: 'plusjakarta.sans';
+    src: url('assets/fonts/MyCustomFont.ttf'));
+}
+
+.font-custom{
+    font-family: 'MyCustomFont';
+}
