@@ -38,4 +38,9 @@ Route::get('/question', [QuestionController::class, 'index'])
         ->name('question.index');
 Route::get('/dashboard', [dshboardController::class, 'index'])
         ->name('dashboard.index');
+Route::get('/pelanggan', [PelangganController::class, 'index'])
+    ->name('pelanggan.index');
+Route::get('/pelanggan/create', [PelangganController::class, 'create'])
+    ->name('pelanggan.create');
+
 Route::resource('pelanggan', PelangganController::class);
