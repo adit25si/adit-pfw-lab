@@ -57,7 +57,7 @@
                                     <!-- Birthday -->
                                     <div class="mb-3">
                                         <label for="birthday" class="form-label">Birthday</label>
-                                        <input type="date" id="birthday" name="birthday" value="{{ $dataPelanggan->email }}" class="form-control">
+                                        <input type="date" id="birthday" name="birthday" value="{{ $dataPelanggan->birthday }}" class="form-control">
                                     </div>
 
                                     <!-- Gender -->
@@ -67,7 +67,7 @@
                                             <option value="">-- Pilih --</option>
                                             <option value="Male" {{ $dataPelanggan->gender == 'Male' ? 'selected' : ''}}>Male</option>
                                             <option value="Female" {{ $dataPelanggan->gender == 'Female' ? 'selected' : ''}}>Female</option>
-                                            <option value="Other" {{ $dataPelanggan->gender == 'OPther' ? 'selected' : ''}}>Other</option>
+                                            <option value="Other" {{ $dataPelanggan->gender == 'Other' ? 'selected' : ''}}>Other</option>
                                         </select>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" id="email" name="email" value="{{ $dataPelanggan->birthday }}" class="form-control" required>
+                                        <input type="email" id="email" name="email" value="{{ $dataPelanggan->email }}" class="form-control" required>
                                     </div>
 
                                     <!-- Phone -->

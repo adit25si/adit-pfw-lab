@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pelanggan_tabel');
+        Schema::dropIfExists('pelanggan');
     }
 };

@@ -3,7 +3,6 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MahasiswaController;
-use App\Http\Controllers\MahasiswaControllers;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
@@ -40,9 +39,4 @@ Route::get('/question', [QuestionController::class, 'index'])
         ->name('question.index');
 Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard.index');
-Route::get('/pelanggan', [PelangganController::class, 'index'])
-    ->name('pelanggan.index');
-Route::get('/pelanggan/create', [PelangganController::class, 'create'])
-    ->name('pelanggan.create');
-
 Route::resource('pelanggan', PelangganController::class);
